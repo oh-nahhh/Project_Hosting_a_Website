@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* End of reset */
+
+/*content tag that works as a container for the main page*/
+.content
+{
+	width: auto; 
+	display: flex;
+}
+
+/*The body encapsules all the visible content on the page and makes sure everthing stays in place*/
+body 
+{
+	width: 100%;
+	background-color: #c7d2da;
+	height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 100%;
+	line-height: 1.1;
+}
+
+/* CSS Style for everything inside the main tag  */
+main 
+{
+	width: 85%;
+	margin: 16px auto;
+	padding: 2em;
+	background: rgb(240, 245, 245); 
+	border-right: 1px solid #cdc9c5;
+	border-bottom:  1px solid #cdc9c5;
+	border-left: 1px solid #cdc9c5;
+	border-top: 3px solid #000000;
+	clear: both;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+/* Styling the paragraphs in main */
+main p
+{
+  width: 92%;
+  padding: 0.1px;  
+  color:rgb(65, 64, 64);
+  text-align: left;
+}  
+
+/* style of header with the background picture */
+header 
+{
+  width: 100%;
+  height: 100vh;
+  background: url('../images/D-222.jpg');
+  background-size: cover;
+}
+
+/* Different headline styles  */
+main h1 
+{
+	color: rgba(0, 0, 0, 0.918); 
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;    
+  margin: 1.0em 70% 1.0em 0;
+}
+
+h1 
+{
+	color: rgba(0, 0, 0, 0.918);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;    
+  margin: 1.0em 70% 1.0em 0;
+}
+
+h2 
+{ 
+  color: rgba(0, 0, 0, 0.918);
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 1.0em 70% 1.0em 0;
+}
+
+main  h2 
+{
+  font-size: 30px;    
+  width: 92%;
+  padding: 10px;
+  background-color: rgba(202, 233, 233, 0.918);
+}
+
+aside  h2 
+{
+	font-size: 16px;    
+	width: 85%;
+	padding: 10px;
+	background-color: rgba(202, 233, 233, 0.918);
+}
+  
+h3 
+{
+	color: rgba(0, 0, 0, 0.918);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;    
+  margin: 1.0em 50% 1.0em 0;
+}
+
+/* h3 & h5 are for the nick names */
+article h3
+{ 
+  font-size: 15px;    
+  width: 86%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.918);
+}
+
+article h4 
+{ 
+  font-size: 15px;    
+  width: 86%;
+  padding: 5px;
+  background-color: rgba(202, 233, 233, 0.918);
+}
+
+header h1 
+{
+  width: 40%;
+  font-size: 45px;
+  color: rgb(88, 99, 99);
+  background-color:rgba(81, 154, 156, 0.07);
+  position: absolute;
+  font-family: 'Roboto Condensed', serif;
+  text-align: right;
+  top: 0%;
+  z-index: 0;  
+}
+/* Special headlines to get around the headline warnings */
+h2.title
+{
+  font-size: 30px;    
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(202, 233, 233, 0.918);
+}
+h2.headline
+{
+  font-size: 30px;    
+  width: 100%;
+  padding: 10px;
+  background-color: #eef5f8;
+}
+
+/* Navigation links style */
+nav ul
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+}
+
+nav ul a
+{
+  color: #464e4e;
+  display: block;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+	padding:0.1em;
+	font-family: 'Roboto Condensed';  
+	margin-top:150px;
+}
+
+nav a
+{
+	display: block;
+	color: #1f1f1f;
+	text-align: center;
+	padding: 1.0em;
+  text-decoration: none;  
+}
+
+nav a:focus, nav a:hover, nav a:active 
+{
+	background-color: #c7d2da;
+}
+
+p 
+{
+  font-size: 17px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+section figure, section img 
+{
+	float: left;
+	margin: 0 1em 1em 0;
+} 
+
+figcaption 
+{
+	text-align: left;
+}
+
+/* Link color, to get good contrasts */
+a 
+{
+  color: blue;
+}
+
+/* Width of the footer */
+footer 
+{
+	padding: 15px;
+	background-color: #c7d2da;
+}
+
+footer p
+{
+  font-size: 15px;
+}
+
+/* Table tags */
+table
+{
+  margin: auto;
+}
+  
+th, td 
+{
+  margin: auto;
+  border: 1px solid #BAB6B8;
+  padding: 10px;
+  text-align: left;
+  font-weight: normal;    
+}
+
+#image-container img 
+{
+  display:block;
+  margin:auto;
+}
+
+/* For the grid system */
+.row 
+{ 
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  overflow:auto;
+  grid-template-columns: auto auto auto auto;
+}
+
+.contactform, .inputgroup 
+{
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inputfieldgroup
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputgroup 
+{
+  border: solid 2px #cdc9c5;
+}
+
+.inputdescription
+{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* Styling the picture of Konrad Jakobsson */
+div.konrad 
+{
+  float: left;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.5em; 
+}
+
+/*weather style for javascript*/
+#weatherDiv 
+{
+  background-color: #fff;
+  opacity: 0.9;
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+
+#weatherContent 
+{
+  column-count: 4;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 1.2em;
+}
+
+.windDirection, .windDirection2, .windDirection3, .windDirection4 
+{
+  position: absolute;
+  margin-left: 4em;
+}
+
+#weatherDivg, #weatherDivg2, #weatherDivg3, #weatherDivg4  
+{
+  background-color: #fff;
+  opacity: 0.9;
+  width: 85%;
+  border-top: 1px solid #333;
+}
+
+#weatherContentg, #weatherContentg2, #weatherContentg3, #weatherContentg4  
+{
+  column-count: 4;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 1.2em;
+}

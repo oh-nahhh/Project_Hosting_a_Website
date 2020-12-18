@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="SV">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <script src="../js/index.js" type="module"></script>
+    <title>Kontaktinformation</title>
+</head>
+<body>
+<header>
+    <h1>
+        Djupvik
+    </h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Startsida</a></li>
+            <li><a href="../html/guest.html">Gästplatser</a></li>    
+            <li><a href="../html/turist.html">Turistmål</a></li>         
+            <li><a href="../html/contact.html">Kontakt</a></li>
+            <li><a href="../html/history.html">Historia</a></li>
+            <li><a href="../html/members.html">Medlemsinfo</a></li>
+            <li><a href="../html/english.html">In English</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article>   
+        <h2 class="headline">
+            Kontakta oss
+        </h2>             
+        <section class="central">         
+           
+            <h2 class="title">
+                Kontaktuppgifter
+            </h2>
+            <p>
+                Hamnfogde Bo Lautin, mobil 0707-920310
+            </p>
+            <p>
+                Djupviks hamnförening<br>c/o Ekholm<br>Eksta Hägur 170<br>623 54 Klintehamn
+            </p>
+        </section>            
+        <hr/>
+        <div class="contactform">
+            <fieldset class="inputgroup">                                    
+                <legend>
+                    Kontaktformulär
+                </legend>
+                <div class="inputfieldgroup">
+                    <fieldset>
+                        <legend>Vad gäller ärendet?:</legend>
+                        <p>
+                            <input type="radio" id="name1" name="name"/>
+                            <label for="name1">Båtplats</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="name2" name="name"/>
+                            <label for="name2">Medlem </label>
+                        </p>
+                        <p>
+                            <input type="radio" id="name3" name="name"/>
+                            <label for="name3">Övrigt</label>
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="inputfieldgroup">
+                    <label for="subject" class="inputdescription">Rubrik för ärendet.</label>
+                    <input id="subject" class="inputfield" type="text" />
+                </div>
+                <div class="inputfieldgroup">
+                    <label for="subjectdesription" class="inputdescription">Beskrivning utav ärendet.</label>
+                    <textarea id="subjectdesription" class="inputfield inputtextbox"></textarea>
+                </div>
+                <div class="inputfieldgroup">
+                    <form action="#" method="POST">
+                        <fieldset>
+                            <!--Creative way to get around legend/label warnings -->
+                            <legend>Hur vill du </legend>
+                            <label for="type">bli kontaktad :</label>
+                            <select id="type" name="type">
+                            <option value="number">mail</option>
+                            <option value="number">telefon </option>
+                            <option value="number">inte alls</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="inputfieldgroup">
+                    <label for="mail" class="inputdescription">Mail</label>
+                    <input id="mail" class="inputfield" type="email" />
+                </div>
+                <div class="inputfieldgroup">
+                    <label for="phone" class="inputdescription">Telefon</label>
+                    <input id="phone" class="inputfield" type="tel">
+                </div>
+                <div class="inputdescription">
+                    <input type="submit" value="Skicka" />
+                </div>
+            </fieldset>
+        </div>            
+    </article>
+</main>
+<hr/>
+<footer>
+    <p>
+        &copy; Copyright <span id="year"> </span>, Djupviks hamnförening.
+    </p>
+</footer> 
+</body>            
+</html>
